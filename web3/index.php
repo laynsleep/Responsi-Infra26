@@ -21,17 +21,17 @@ $nim  = "H1H024044";
 
 <p>
 Nama Praktikan:
-<strong><?= $result[1] ?? "gagal akses db" ?></strong>
+<strong><?= $result[2] ?? "gagal akses db" ?></strong>
 </p>
 
 <p>
 NIM:
-<strong><?= $result[0] ?? "gagal akses db" ?></strong>
+<strong><?= $result[1] ?? "gagal akses db" ?></strong>
 </p>
 
 <p>
 Container:
-<strong>WEB-WOB</strong>
+<strong>WEB-3</strong>
 </p>
 
 </body>
