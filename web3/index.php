@@ -1,5 +1,8 @@
 <?php
 
+$konek = mysqli_connect($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
+$result = mysqli_fetch_array(mysqli_query($konek, "SELECT * FROM students"));
+
 $nama = "Chaedar Ali Amrulloh";
 $nim  = "H1H024044";
 
@@ -18,17 +21,17 @@ $nim  = "H1H024044";
 
 <p>
 Nama Praktikan:
-<strong><?= $nama ?></strong>
+<strong><?= $result[2] ?? "gagal akses db" ?></strong>
 </p>
 
 <p>
 NIM:
-<strong><?= $nim ?></strong>
+<strong><?= $result[1] ?? "gagal akses db" ?></strong>
 </p>
 
 <p>
 Container:
-<strong>WEB-WOB</strong>
+<strong>WEB-3</strong>
 </p>
 
 </body>
