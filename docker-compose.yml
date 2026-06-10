@@ -1,6 +1,6 @@
 version: "3.9"
 
-services
+services:
 
   nginx:
     build:
@@ -47,7 +47,7 @@ services
 
   web3:
     build:
-      context: ./web33
+      context: ./web3
     container_name: web3
     environment:
       DB_HOST: db
@@ -74,8 +74,8 @@ services
       - backend
 
 volumes:
-  database-data:
+  db-data:
 
 networks:
-  frontend:
-  backend:
+  frontend: {}
+  backend: {}
