@@ -20,7 +20,7 @@ services:
       context: ./web1
     container_name: web1
     environment:
-      DB_HOST: mysql
+      DB_HOST: db
       DB_NAME: responsi
       DB_USER: student
       DB_PASS: student123
