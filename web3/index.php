@@ -1,7 +1,7 @@
 <?php
 
-$nama = "ganti ke namamu";
-$nim  = "ganti ke nimmu";
+$nama = "Chaedar Ali Amrulloh";
+$nim  = "H1H024044";
 
 ?>
 
